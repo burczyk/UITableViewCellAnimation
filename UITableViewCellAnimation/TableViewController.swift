@@ -38,9 +38,7 @@ class TableViewController: UITableViewController {
 
 extension TableViewController: CellDelegate {
     func contentDidChange(cell: Cell) {
-        UIView.animate(withDuration: 1) {
-            self.tableView.beginUpdates()
-            self.tableView.endUpdates()
-        }
+        self.tableView.beginUpdates()
+        self.tableView.endUpdates()
     }
 }
